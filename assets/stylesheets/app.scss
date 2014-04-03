@@ -3,6 +3,9 @@
 @import 'assets/govuk_frontend_toolkit/stylesheets/measurements';
 @import 'assets/govuk_frontend_toolkit/stylesheets/css3';
 @import 'assets/govuk_frontend_toolkit/stylesheets/conditionals';
+@import 'assets/govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta';
+@import 'assets/govuk_frontend_toolkit/stylesheets/design-patterns/buttons';
+@import 'assets/govuk_frontend_toolkit/stylesheets/design-patterns/media-player.scss';
 
 // based on Whitehall - dept colours and logos
 @import 'departments';
@@ -10,8 +13,8 @@
 // match www.gov.uk footer links (_footer_top.html)
 @import 'alphagov-static-footer';
 
-// govuk_toolkit - media player styles
-@import 'assets/govuk_frontend_toolkit/stylesheets/design-patterns/media-player.scss';
+// import govuk helper styles from http://alphagov.github.io/design-patterns/
+@import 'assets/govuk-helper/govuk-helper';
 
 // Main central container element (main element must be unique in the page):
 main {
