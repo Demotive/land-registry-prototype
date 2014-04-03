@@ -31,17 +31,27 @@
 
 // search block
 form.search-block {
-  margin-top: $gutter;
 
-  label.form-label {
-    @include core-27;
+  &.search-page {
+    margin-top: $gutter;
+
+    label.form-label {
+      @include core-27;
+    }
+    input.form-control {
+      @include core-36;
+    }
+    .button {
+      @include core-27;
+    }
   }
-  input.form-control {
-    @include core-36;
+
+  &.results-page {
+    h1 {
+      @include bold-24;
+    }
   }
-  .button {
-    @include core-27;
-  }
+
 }
 
 // tabs
@@ -81,7 +91,30 @@ form.search-block {
   padding: $gutter-half;
 }
 
+// result
+.results-list {
+  h2 {
+    @include heading-24;
+  }
+  ul li {
+    margin-bottom: 8px;
+  }
+}
+.result {
+  padding: $gutter-half 0 $gutter-half $gutter;
+}
+
+// a map
+.map {
+  min-height: 200px;
+}
+
+// help area
+.help {
+  @include core-16;
+}
+
 // simple tools
 .secondary {
-  color: $secondary-text-colour;
+  color: $secondary-text-colour !important;
 }

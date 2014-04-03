@@ -1,0 +1,149 @@
+---
+layout: govuk_template
+---
+
+<div class="breadcrumb">
+  <nav role="navigation">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">Find a property</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main role="main" class="main govuk">
+
+  <div class="grid-wrapper">
+
+
+    <div class="grid">
+      <div class="inner-block">
+
+        <form class="form search-block results-page" action="/">
+
+          <fieldset>
+            <div class="form-group">
+              <label class="form-label" for="search-terms">
+                <h1>Search results for</h1>
+              </label>
+              <input type="text" class="form-control" id="search-terms" value="search terms" />
+              <input type="submit" class="button" value="Search" />
+            </div>
+          </fieldset>
+
+        </form>
+
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="inner-block">
+
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">List</a></li>
+            <li><a href="#tabs-2">Map</a></li>
+          </ul>
+
+          <div id="tabs-1" class="text results-list">
+            
+            <h2>Addresses</h2>
+            <ul>
+              <li>
+                <details>
+                  <summary>
+                    13 Isleworth Road
+                  </summary>
+                  <div class="result">
+                    <p>
+                      Exeter,<br/>
+                      EX41 1QU
+                    </p>
+                    <p>
+                      Title number <a href="#">CS72510</a>
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>
+                    14 Isleworth Road
+                  </summary>
+                  <div class="result">
+                    <p>
+                      Exeter,<br/>
+                      EX41 1QU
+                    </p>
+                    <p>
+                      Title number <a href="#">CS72510</a>
+                    </p>
+                  </div>
+                </details>
+              </li>
+            </ul>
+
+            <h2>Description</h2>
+            <ul>
+              <li>
+                <details>
+                  <summary>
+                    Land on left side of river
+                  </summary>
+                  <div>
+                    Title number <a href="#">CS72510</a>
+                  </div>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>
+                    Land on right side of river
+                  </summary>
+                  <div>
+                    Title number <a href="#">CS72511</a>
+                  </div>
+                </details>
+              </li>
+            </ul>
+
+            <h2>Title number</h2>
+            <ul class="list-bullet">
+              <li>
+                <div>
+                  Title number <a href="#">CS72510</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <div id="tabs-2">
+            
+            <div id="map" class="map">
+            Map
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="inner-block">
+
+        <div class="text help">
+          <a href="#" class="secondary">Can't find the property you're looking for?</a>
+          <div class="help-inner">
+            <p>Try checking <a href="#" id="resultsGoMapView">map view</a> or searching again. If you still can't find what you're looking for, please <a href="#">contact us</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</main>
