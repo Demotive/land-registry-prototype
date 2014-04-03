@@ -16,9 +16,14 @@
 // import govuk helper styles from http://alphagov.github.io/design-patterns/
 @import 'assets/govuk-helper/govuk-helper';
 
+// banner
+.phase-banner {
+  @include phase-banner;
+}
+
 // Main central container element (main element must be unique in the page):
 main {
-  max-width: 60em;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 1em 15px;
 }
