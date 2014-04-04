@@ -103,15 +103,16 @@ form.search-block {
 
 .ui-tabs-panel {
   padding: $gutter-half;
+
+  &.map-panel {
+    padding: $gutter-half 0;
+  }
 }
 
 // result
 .results-list {
-  h2 {
-    @include heading-24;
-  }
-  ul li {
-    margin-bottom: 8px;
+  ul {
+    margin-bottom: $gutter;
   }
 }
 .result {
@@ -120,15 +121,44 @@ form.search-block {
 
 // a map
 .map {
-  min-height: 200px;
+  position: relative;
+  margin-bottom: $gutter;
+
+  img {
+    position: absolute;
+  }
+  
+  .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+.map-960 {
+  padding-bottom: 56.25%;
 }
 
 // help area
 .help {
-  @include core-16;
+  margin-top: $gutter * 2;
+}
+.help-inner {
+  padding: $gutter 0 0 0;
 }
 
 // simple tools
 .secondary {
   color: $secondary-text-colour !important;
+}
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  left: -999em;
+  top: -999em;
+}
+img.flex {
+  display: block;
+  max-width: 100%;
 }
