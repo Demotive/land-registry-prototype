@@ -18,13 +18,7 @@ layout: govuk_template
       <div class="inner-block">
         <div class="text">
 
-          <h1 class="heading-48">
-            <span class="heading-27">Land registry</span>
-            Find a property
-            <span class="phase-block">
-              <span class="alpha">Alpha</span>
-            </span>
-          </h1>
+          {% include prototype/_title.html %}
 
           <p class="lede">For no fee, you can find out</p>
 
@@ -65,21 +59,7 @@ layout: govuk_template
           </div>
           <div id="tabs-2" class="map-panel">
 
-            <div class="map map-960">
-              <img src="http://placehold.it/960x540" class="flex" />
-              <div id="map" class="container"></div>
-            </div>
-
-            <script>
-              var map = L.mapbox.map('map', 'demotive.hn08i14n')
-                .setView([54.826, -4.087], 5);
-            </script>
-
-            <div>
-              <a href="#" class="button">Search</a>
-            </div>
-
-            <p class="form-hint">Find properties within the map area</p>
+            {% include prototype/_map-search-fullpage.html %}
 
           </div>
         </div>
@@ -88,44 +68,9 @@ layout: govuk_template
     </div>
 
 
-    <div class="grid">
-      <div class="inner-block">
+    {% include prototype/_tabs-users.html %}
 
-        <div class="tabbed">
-          <ul>
-            <li><a href="#tabs-2-1">Your property</a></li>
-            <li><a href="#tabs-2-2">Buying a property</a></li>
-            <li><a href="#tabs-2-3">For solicitors and conveyancers</a></li>
-          </ul>
-          <div class="text">
-            <div id="tabs-2-1">
-              <p>
-                Use <a href="#">Identity assurance</a> to log in and verify you're the owner of a property. Then you can
-              </p>
-              <ul class="list-bullet">
-                <li>Authorise a solicitor</li>
-                <li>Update your personal details</li>
-              </ul>
-            </div>
-            <div id="tabs-2-2">
-              <p>Relevant info for people buying a property. How can this tool help?</p>
-              <ul class="list-bullet">
-                <li>This is how</li>
-                <li>This is how too</li>
-              </ul>
-            </div>
-            <div id="tabs-2-3">
-              <p>Relevant info for intermediaries. How can this tool help?</p>
-              <ul class="list-bullet">
-                <li>This is how</li>
-                <li>This is how too</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    {% include prototype/_advanced-link.html %}
 
   </div>
 

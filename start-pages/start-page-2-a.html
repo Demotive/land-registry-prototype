@@ -19,13 +19,7 @@ layout: govuk_template
       <div class="inner-block">
         <div class="text">
 
-          <h1 class="heading-48">
-            <span class="heading-27">Land registry</span>
-            Find a property
-            <span class="phase-block">
-              <span class="alpha">Alpha</span>
-            </span>
-          </h1>
+            {% include prototype/_title.html %}
 
         </div>
       </div>
@@ -35,21 +29,7 @@ layout: govuk_template
     <div class="grid">
       <div class="inner-block">
 
-        <div class="map map-960">
-          <img src="http://placehold.it/960x540" class="flex" />
-          <div id="map" class="container"></div>
-        </div>
-
-        <script>
-          var map = L.mapbox.map('map', 'demotive.hn08i14n')
-            .setView([54.826, -4.087], 5);
-        </script>
-
-        <div>
-          <a href="#" class="button">Search</a>
-        </div>
-
-        <p class="form-hint">Find properties within the map area</p>
+        {% include prototype/_map-search-fullpage.html %}
 
       </div>
     </div>
