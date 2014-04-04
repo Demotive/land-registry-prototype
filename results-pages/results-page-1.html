@@ -19,7 +19,7 @@ layout: govuk_template_stripped
     <div class="grid">
       <div class="inner-block">
 
-        <form class="form search-block results-page" action="/">
+        <form class="form search-block results-page" action="/results-pages/results-page-1.html">
 
           <fieldset>
             <div class="form-group">
@@ -46,7 +46,7 @@ layout: govuk_template_stripped
             <li><a href="#tabs-2">Map</a></li>
           </ul>
 
-          <div id="tabs-1" class="text results-list">
+          <div id="tabs-1" class="results-list">
             
             <h2 class="hidden">Addresses</h2>
             <ul>
@@ -55,14 +55,24 @@ layout: govuk_template_stripped
                   <summary>
                     13 Isleworth Road
                   </summary>
-                  <div class="result">
-                    <p>
-                      Exeter,<br/>
-                      EX41 1QU
+                  <div class="grid-wrapper result">
+                    <div class="grid grid-1-4">
+                      <p>
+                        Exeter,<br/>
+                        EX41 1QU
+                      </p>
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
+                    </div>
+                    <p class="grid grid-1-2">
+                      Type: semi-detached house<br>
+                      Title number: CS72510<br>
+                      Price paid: &pound;178,000 (4 March 2009)
                     </p>
-                    <p>
-                      Title number <a href="#">CS72510</a>
-                    </p>
+                    <div class="grid grid-1-4">
+                      <img src="/assets/images/result-dummy.png" class="flex" />
+                    </div>
                   </div>
                 </details>
               </li>
@@ -71,14 +81,24 @@ layout: govuk_template_stripped
                   <summary>
                     14 Isleworth Road
                   </summary>
-                  <div class="result">
-                    <p>
-                      Exeter,<br/>
-                      EX41 1QU
+                  <div class="grid-wrapper result">
+                    <div class="grid grid-1-4">
+                      <p>
+                        Exeter,<br/>
+                        EX41 1QU
+                      </p>
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
+                    </div>
+                    <p class="grid grid-1-2">
+                      Type: semi-detached house<br>
+                      Title number: CS72510<br>
+                      Price paid: &pound;178,000 (4 March 2009)
                     </p>
-                    <p>
-                      Title number <a href="#">CS72510</a>
-                    </p>
+                    <div class="grid grid-1-4">
+                      <img src="/assets/images/result-dummy.png" class="flex" />
+                    </div>
                   </div>
                 </details>
               </li>
@@ -91,10 +111,18 @@ layout: govuk_template_stripped
                   <summary>
                     Land on left side of river
                   </summary>
-                  <div class="result">
-                    <p>
-                      Title number <a href="#">CS72510</a>
+                  <div class="grid-wrapper result">
+                    <div class="grid grid-1-4">
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
+                    </div>
+                    <p class="grid grid-1-2">
+                      Title number: CS72510
                     </p>
+                    <div class="grid grid-1-4">
+                      <img src="/assets/images/result-dummy.png" class="flex" />
+                    </div>
                   </div>
                 </details>
               </li>
@@ -103,10 +131,18 @@ layout: govuk_template_stripped
                   <summary>
                     Land on right side of river
                   </summary>
-                  <div class="result">
-                    <p>
-                      Title number <a href="#">CS72510</a>
+                  <div class="grid-wrapper result">
+                    <div class="grid grid-1-4">
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
+                    </div>
+                    <p class="grid grid-1-2">
+                      Title number: CS72510
                     </p>
+                    <div class="grid grid-1-4">
+                      <img src="/assets/images/result-dummy.png" class="flex" />
+                    </div>
                   </div>
                 </details>
               </li>
@@ -117,10 +153,20 @@ layout: govuk_template_stripped
               <li>
                 <details>
                   <summary>
-                    Title number <a href="#">CS72510</a>
+                    Title number CS72510
                   </summary>
-                  <div class="result">
-                    Just the map?
+                  <div class="grid-wrapper result">
+                    <div class="grid grid-1-4">
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
+                    </div>
+                    <p class="grid grid-1-2">
+                      Title number: CS72510
+                    </p>
+                    <div class="grid grid-1-4">
+                      <img src="/assets/images/result-dummy.png" class="flex" />
+                    </div>
                   </div>
                 </details>
               </li>
@@ -129,8 +175,10 @@ layout: govuk_template_stripped
           </div>
           <div id="tabs-2" class="map-panel">
             
-            <div id="map" class="map map-540">
-              <img src="http://placehold.it/960x540" class="flex" />
+            <div class="map map-960">
+              <a href="/details-pages/details-page-dummy.html">
+                <img src="/assets/images/map-dummy-2.png" class="flex" />
+              </a>
             </div>
 
           </div>

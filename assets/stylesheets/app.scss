@@ -115,8 +115,14 @@ form.search-block {
     margin-bottom: $gutter;
   }
 }
-.result {
-  padding: $gutter-half 0 $gutter-half $gutter;
+.govuk .result {
+  padding: $gutter-half 0;
+  margin-bottom: $gutter;
+  border-bottom: 1px solid $border-colour;
+}
+
+.grid-1-3 .results-list {
+  padding-right: $gutter-half;
 }
 
 // a map
@@ -139,6 +145,9 @@ form.search-block {
 .map-960 {
   padding-bottom: 56.25%;
 }
+.map-640x640 {
+  padding-bottom: 100%;
+}
 
 // help area
 .help {
@@ -151,6 +160,9 @@ form.search-block {
 // simple tools
 .secondary {
   color: $secondary-text-colour !important;
+}
+.smaller {
+  @include core-16;
 }
 .hidden {
   position: absolute;
