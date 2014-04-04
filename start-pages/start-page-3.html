@@ -44,21 +44,31 @@ layout: govuk_template
     <div class="grid">
       <div class="inner-block">
 
-        <form class="form search-block search-page" action="/">
+        <div class="tabbed">
+          <ul>
+            <li><a href="#tabs-1">Search</a></li>
+            <li><a href="#tabs-2">Browse a map</a></li>
+          </ul>
+          <div id="tabs-1">
+            <form class="form search-block large-inline" action="/">
 
-          <fieldset>
-            <div class="form-group">
-              <label class="form-label" for="search-terms">Search the land registry</label>
-              <p class="form-hint">E.g. postcode, city or town, street name</p>
-              <input type="text" class="form-control" id="search-terms" />
-            </div>
-          </fieldset>
+              <fieldset>
+                <div class="form-group">
+                  <label class="form-label" for="search-terms">Search the land registry</label>
+                  <p class="form-hint">E.g. postcode, city or town, street name</p>
+                  <input type="text" class="form-control" id="search-terms" />
+                  <input type="submit" class="button" value="Search" />
+                </div>
+              </fieldset>
 
-          <div class="form-group">
-            <input type="submit" class="button" value="Search" />
+            </form>
           </div>
+          <div id="tabs-2">
 
-        </form>
+            MAP
+
+          </div>
+        </div>
 
       </div>
     </div>
@@ -69,12 +79,12 @@ layout: govuk_template
 
         <div class="tabbed">
           <ul>
-            <li><a href="#tabs-1">Your property</a></li>
-            <li><a href="#tabs-2">Buying a property</a></li>
-            <li><a href="#tabs-3">For solicitors and conveyancers</a></li>
+            <li><a href="#tabs-2-1">Your property</a></li>
+            <li><a href="#tabs-2-2">Buying a property</a></li>
+            <li><a href="#tabs-2-3">For solicitors and conveyancers</a></li>
           </ul>
           <div class="text">
-            <div id="tabs-1">
+            <div id="tabs-2-1">
               <p>
                 Use <a href="#">Identity assurance</a> to log in and verify you're the owner of a property. Then you can
               </p>
@@ -83,14 +93,14 @@ layout: govuk_template
                 <li>Update your personal details</li>
               </ul>
             </div>
-            <div id="tabs-2">
+            <div id="tabs-2-2">
               <p>Relevant info for people buying a property. How can this tool help?</p>
               <ul class="list-bullet">
                 <li>This is how</li>
                 <li>This is how too</li>
               </ul>
             </div>
-            <div id="tabs-3">
+            <div id="tabs-2-3">
               <p>Relevant info for intermediaries. How can this tool help?</p>
               <ul class="list-bullet">
                 <li>This is how</li>

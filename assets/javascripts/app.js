@@ -1,6 +1,6 @@
 $(function() {
   
-  $('#tabs').tabs();
+  $('.tabbed').tabs();
 
   $('.help-inner').hide();
   $('.help .secondary').on('click', function(e) {
