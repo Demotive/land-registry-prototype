@@ -1,0 +1,75 @@
+---
+layout: govuk_template
+---
+
+<div class="breadcrumb">
+  <nav role="navigation">
+    <ol>
+      <li><a href="/">Home</a></li>
+     </ol>
+  </nav>
+</div>
+
+<main role="main" class="main govuk">
+
+  <div class="grid-wrapper">
+
+    <div class="grid">
+      <div class="inner-block">
+        <div class="text">
+
+          {% include prototype/_title.html %}
+
+          <p class="lede">Find out details about a property, such as:</p>
+
+          <ul class="list-bullet">
+            <li>The Land registry title number</li>
+            <li>Prices paid for the property in the past</li>
+            <li>A map of the property</li>
+            <li>Lease details</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="inner-block">
+
+        <form class="form search-block search-page" action="/results-pages/results-page-3.html">
+
+          <fieldset>
+            <div class="form-group">
+              <label class="form-label" for="search-terms">Search the land registry</label>
+              <p class="form-hint">E.g. postcode, city or town, street name</p>
+              <input type="text" class="form-control" id="search-terms" />
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <input type="submit" class="button" value="Search" />
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="inner-block alternate-routes">
+
+        <div class="grid grid-1-2">
+          <h2>Other ways to find property</h2>
+        </div>
+        <div class="grid grid-1-2">
+          <p>You can also search using <a href="start-page-4a.html">advanced map based tools</a>.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</main>

@@ -29,6 +29,14 @@
   @include phase-banner;
 }
 
+// to enable full width maps
+div.main {
+  margin-bottom: 0;
+  &.last {
+    margin-bottom: 90px;
+  }
+}
+
 // search block
 form.search-block {
 
@@ -111,6 +119,9 @@ form.search-block {
 
 // result
 .results-list {
+  h2 {
+    margin-bottom: $gutter;
+  }
   ul {
     margin-bottom: $gutter;
   }
@@ -130,7 +141,7 @@ form.search-block {
   position: relative;
   margin-bottom: $gutter;
 
-  img {
+  img.flex {
     position: absolute;
   }
   
@@ -170,7 +181,23 @@ form.search-block {
   left: -999em;
   top: -999em;
 }
-img.flex {
+img {
   display: block;
   max-width: 100%;
+}
+
+// big settings
+h2 {
+  @include bold-24;
+}
+h3 {
+  @include core-24;
+}
+
+// alternate routes area (start page #4)
+.alternate-routes {
+  & > div {
+    padding-top: $gutter;
+    border-top: 1px solid $border-colour;
+  }
 }
