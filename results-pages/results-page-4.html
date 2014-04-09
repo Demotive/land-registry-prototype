@@ -6,7 +6,7 @@ layout: govuk_template_stripped
   <nav role="navigation">
     <ol>
       <li><a href="/">Home</a></li>
-      <li><a href="/start-pages/start-page-4.html">Find a property</a></li>
+      <li><a href="#">Find a property</a></li>
     </ol>
   </nav>
 </div>
@@ -19,7 +19,7 @@ layout: govuk_template_stripped
     <div class="grid">
       <div class="inner-block">
 
-        <form class="form search-block results-page" action="/results-pages/results-page-1.html">
+        <form class="form search-block results-page" action="/results-pages/results-page-5.html">
 
           <fieldset>
             <div class="form-group">
@@ -40,55 +40,55 @@ layout: govuk_template_stripped
     <div class="grid">
       <div class="inner-block">
 
+        <div class="grid grid-1-3">
+
           <div class="results-list">
             
             <h2 class="hidden">Addresses</h2>
             <ul>
               <li>
-                <div class="grid-wrapper result">
-                  <h3>13 Isleworth Road</h3>
-                  <div class="grid grid-1-4">
-                    <p>
-                      Exeter,<br/>
-                      EX41 1QU
-                    </p>
-                    <p>
-                      <a href="/details-pages/details-page-dummy.html">View full details</a>
-                    </p>
+                <details>
+                  <summary>
+                    13 Isleworth Road
+                  </summary>
+                  <div class="result">
+                      <p>
+                        Exeter,<br/>
+                        EX41 1QU
+                      </p>
+                      <p class="smaller">
+                        Type: semi-detached house<br>
+                        Title number: CS72510<br>
+                        Owner: Mr John Dee<br>
+                        Price paid: &pound;178,000 (4 March 2009)
+                      </p>
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
                   </div>
-                  <p class="grid grid-1-2">
-                    Type: semi-detached house<br>
-                    Title number: CS72510<br>
-                    Owner: Mr John Dee<br>
-                    Price paid: &pound;178,000 (4 March 2009)
-                  </p>
-                  <div class="grid grid-1-4">
-                    <img src="/assets/images/result-dummy.png" class="padded-h" />
-                  </div>
-                </div>
+                </details>
               </li>
               <li>
-                <div class="grid-wrapper result">
-                  <h3>13 Isleworth Road</h3>
-                  <div class="grid grid-1-4">
-                    <p>
-                      Exeter,<br/>
-                      EX41 1QU
-                    </p>
-                    <p>
-                      <a href="/details-pages/details-page-dummy.html">View full details</a>
-                    </p>
+                <details>
+                  <summary>
+                    14 Isleworth Road
+                  </summary>
+                  <div class="result">
+                      <p>
+                        Exeter,<br/>
+                        EX41 1QU
+                      </p>
+                      <p class="smaller">
+                        Type: semi-detached house<br>
+                        Title number: CS72510<br>
+                        Owner: Mr John Dee<br>
+                        Price paid: &pound;178,000 (4 March 2009)
+                      </p>
+                      <p>
+                        <a href="/details-pages/details-page-dummy.html">View full details</a>
+                      </p>
                   </div>
-                  <p class="grid grid-1-2">
-                    Type: semi-detached house<br>
-                    Title number: CS72510<br>
-                    Owner: Mr John Dee<br>
-                    Price paid: &pound;178,000 (4 March 2009)
-                  </p>
-                  <div class="grid grid-1-4">
-                    <img src="/assets/images/result-dummy.png" class="padded-h" />
-                  </div>
-                </div>
+                </details>
               </li>
             </ul>
 
@@ -101,21 +101,16 @@ layout: govuk_template_stripped
                   <summary>
                     Land parcel north of river
                   </summary>
-                  <div class="grid grid-1-4">
-                    <p>
-                      <a href="/details-pages/details-page-dummy.html">View full details</a>
-                    </p>
-                  </div>
-                  <div class="grid grid-1-2">
-                    <p>
+                  <div class="result">
+                    <p class="smaller">
                       Type: land type<br>
                       Title number: CS72510<br>
                       Owner: Mr John Dee<br>
                       Price paid: &pound;178,000 (4 March 2009)
                     </p>
-                  </div>
-                  <div class="grid grid-1-4">
-                    <img src="/assets/images/result-dummy.png" class="padded-h" />
+                    <p>
+                      <a href="/details-pages/details-page-dummy.html">View full details</a>
+                    </p>
                   </div>
                 </details>
               </li>
@@ -124,22 +119,17 @@ layout: govuk_template_stripped
                   <summary>
                     Land parcel south of river
                   </summary>
-                    <div class="grid grid-1-4">
-                      <p>
-                        <a href="/details-pages/details-page-dummy.html">View full details</a>
-                      </p>
-                    </div>
-                    <div class="grid grid-1-2">
-                      <p>
-                        Type: land type<br>
-                        Title number: CS72510<br>
-                        Owner: Mr John Dee<br>
-                        Price paid: &pound;178,000 (4 March 2009)
-                      </p>
-                    </div>
-                    <div class="grid grid-1-4">
-                      <img src="/assets/images/result-dummy.png" class="padded-h" />
-                    </div>
+                  <div class="result">
+                    <p class="smaller">
+                      Type: land type<br>
+                      Title number: CS72510<br>
+                      Owner: Mr John Dee<br>
+                      Price paid: &pound;178,000 (4 March 2009)
+                    </p>
+                    <p>
+                      <a href="/details-pages/details-page-dummy.html">View full details</a>
+                    </p>
+                  </div>
                 </details>
               </li>
             </ul>
@@ -151,28 +141,46 @@ layout: govuk_template_stripped
                   <summary>
                     Title number CS72510
                   </summary>
-                  <div class="grid-wrapper result">
-                    <div class="grid grid-1-4">
-                      <p>
-                        <a href="/details-pages/details-page-dummy.html">View full details</a>
-                      </p>
-                    </div>
-                    <div class="grid grid-1-2">
-                      <p>
-                        Type: land type<br>
-                        Title number: CS72510<br>
-                        Owner: Mr John Dee<br>
-                        Price paid: &pound;178,000 (4 March 2009)
-                      </p>
-                    </div>
-                    <div class="grid grid-1-4">
-                      <img src="/assets/images/result-dummy.png" class="padded-h" />
-                    </div>
+                  <div class="result">
+                    <p class="smaller">
+                      Type: land type<br>
+                      Title number: CS72510<br>
+                      Owner: Mr John Dee<br>
+                      Price paid: &pound;178,000 (4 March 2009)
+                    </p>
+                    <p>
+                      <a href="/details-pages/details-page-dummy.html">View full details</a>
+                    </p>
                   </div>
                 </details>
               </li>
             </ul>
 
+          </div>
+
+        </div>
+
+        <div class="grid grid-2-3">
+            
+            <div class="map map-640x640">
+              <a href="/details-pages/details-page-dummy.html">
+                <img src="/assets/images/map-dummy-2-sml.png" class="flex" />
+              </a>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="inner-block">
+
+        <div class="text help">
+          <a href="#" class="secondary">Can't find the property you're looking for?</a>
+          <div class="help-inner">
+            <p>If you can't find what you're looking for, please <a href="#">contact us</a>.</p>
           </div>
         </div>
 
